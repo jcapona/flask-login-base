@@ -1,6 +1,7 @@
 import os
-from flask_login import LoginManager
 from flask import Flask
+from flask_login import LoginManager
+
 
 from api.config import config
 
@@ -15,7 +16,7 @@ def create_app():
     db.init_app(app)
 
     login_manager = LoginManager()
-    login_manager.login_view = 'login.login_get'
+    login_manager.login_view = 'login.login_route'
     login_manager.init_app(app)
 
     from api.models import Person
