@@ -1,5 +1,5 @@
 from .base import db
-from .user import User
+from .person import Person
 
-__all__ = ["User", "db"]
+__all__ = ["Person", "db"]
 

@@ -8,7 +8,7 @@ def create_app():
     app.config.from_object(config[env])
 
     # Register db to the app
-    from .models import db
+    from api.models import db
     db.init_app(app)
 
     # Register blueprints for main sections of the app
