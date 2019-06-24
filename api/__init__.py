@@ -13,10 +13,10 @@ def create_app():
 
     # Register blueprints for main sections of the app
 
-    from .login import login as login_blueprint
+    from .blueprints.login import login as login_blueprint
     app.register_blueprint(login_blueprint)
 
-    from .generic import generic as generic_blueprint
+    from .blueprints.generic import generic as generic_blueprint
     app.register_blueprint(generic_blueprint)
 
     return app

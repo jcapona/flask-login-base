@@ -1,5 +1,5 @@
 from flask import Blueprint
-from .models.base import db
+from api.models.base import db
 
 login = Blueprint('login', __name__)
 
